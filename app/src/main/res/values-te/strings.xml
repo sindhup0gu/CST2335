@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">AndroidLabs</string>
-    <string name="hello_message">Hello Telugu!</string>
-    <string name="ButtonText">I\’m a button</string>
+    <string name="hello_Message">హలో ప్రపంచ !!!</string>
+    <string name="StringText">ఇక్కడ నా విడ్జెట్లు</string>
+    <string name="ButtonText">బటన్</string>
+    <string name="Checkbox">దాన్ని తనిఖీ చేయండి</string>
+    <string name="SwitchText">ఆన్ / ఆఫ్ చేయండి</string>
+    <string name="editText">ఇక్కడ మీ సమాధానం వ్రాయండి</string>
+    <string name="textView1">మీ ఇమెయిల్ చిరునామాను నమోదు చేయండి:</string>
+    <string name="textView2">మీ పాస్వర్డ్ను టైప్ చేయండి:</string>
+    <string name="editView1">ఇక్కడ ఇమెయిల్ను టైప్ చేయండి</string>
+    <string name="button1">లాగిన్</string>
+    <string name="pfText1">మీ ప్రొఫైల్</string>
+    <string name="pfText2">మీ పేరు:</string>
+    <string name="pfText3">మీ ఇమెయిల్:</string>
+    <string name="pfText4">మీ ఫోటో:</string>
+    <string name="pfText5">చిత్రాన్ని తీసుకోవడానికి పైన ఉన్న బటన్పై క్లిక్ చేయండి</string>
+    <string name="pfEdit1">మీ పేరు నమోదు చేయండి</string>
+    <string name="pfEdit2">మీ ఇమెయిల్ను నమోదు చేయండి</string>
 </resources>
