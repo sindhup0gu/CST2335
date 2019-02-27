@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
@@ -16,6 +17,7 @@ public class ProfileActivity extends AppCompatActivity {
     ImageButton mImageButton;
     public static final int REQUEST_IMAGE_CAPTURE = 1;
     public static final String ACTIVITY_NAME = "ProfileActivity";
+    private Button chatButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +34,19 @@ public class ProfileActivity extends AppCompatActivity {
                 dispatchTakePictureIntent();
             }
         });
+        chatButton = (Button) findViewById(R.id.chatButton);
 
-        Log.e(ACTIVITY_NAME,"onCreate called");
+        chatButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nextPage = new Intent(ProfileActivity.this, ChatRoomActivity.class);
+                startActivity(nextPage);
+
+            }
+
+        });
+
+        Log.e(ACTIVITY_NAME, "onCreate called");
 
     }
 
@@ -51,37 +64,37 @@ public class ProfileActivity extends AppCompatActivity {
             Bitmap imageBitmap = (Bitmap) extras.get("data");
             mImageButton.setImageBitmap(imageBitmap);
         }
-        Log.e(ACTIVITY_NAME,"onActivity called");
+        Log.e(ACTIVITY_NAME, "onActivity called");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.e(ACTIVITY_NAME,"onStart called");
+        Log.e(ACTIVITY_NAME, "onStart called");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.e(ACTIVITY_NAME,"onResume called");
+        Log.e(ACTIVITY_NAME, "onResume called");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e(ACTIVITY_NAME,"onPause called");
+        Log.e(ACTIVITY_NAME, "onPause called");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.e(ACTIVITY_NAME,"onStop called");
+        Log.e(ACTIVITY_NAME, "onStop called");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.e(ACTIVITY_NAME,"onDestroy called");
+        Log.e(ACTIVITY_NAME, "onDestroy called");
     }
 
 }

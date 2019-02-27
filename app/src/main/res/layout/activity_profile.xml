@@ -30,7 +30,7 @@
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/pfText3" />
+        android:text="@string/pfEdit1" />
 
     <EditText
         android:id="@+id/SecondEmail"
@@ -57,4 +57,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/pfText5" />
+
+    <Button
+        android:id="@+id/chatButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go to chat" />
 </LinearLayout>

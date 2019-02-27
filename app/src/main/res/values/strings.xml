@@ -6,22 +6,17 @@
     <string name="ButtonText">Button</string>
     <string name="Checkbox">Check it out</string>
     <string name="SwitchText">switch on / off</string>
-    <string name="editText">
-Type your answer here</string>
+    <string name="editText">Type your answer here</string>
     <string name="textView1">Enter your email address:</string>
-    <string name="textView2">
-Type your password:</string>
-    <string name="editView1">
-Type your email here</string>
-    <string name="button1">
-Log in</string>
+    <string name="textView2">Type your password:</string>
+    <string name="editView1">Type your email here</string>
+    <string name="button1">Log in</string>
     <string name="pfText1">Your profile</string>
     <string name="pfText2">your name:</string>
     <string name="pfText3">Your Email:</string>
     <string name="pfText4">Your picture:</string>
     <string name="pfText5">Click on the button above to take a picture</string>
-    <string name="pfEdit1">
-Enter your name</string>
-
-    <string name="pfEdit2"> enter your email</string>
+    <string name="pfEdit1">Enter your name</string>
+    <string name="pfEdit2">enter your email</string>
 </resources>
+
