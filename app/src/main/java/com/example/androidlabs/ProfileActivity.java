@@ -18,6 +18,7 @@ public class ProfileActivity extends AppCompatActivity {
     public static final int REQUEST_IMAGE_CAPTURE = 1;
     public static final String ACTIVITY_NAME = "ProfileActivity";
     private Button chatButton;
+    private Button toolBarButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +29,8 @@ public class ProfileActivity extends AppCompatActivity {
         String savedEmail = intent.getStringExtra("sharedPrefs");
         secondEmail = findViewById(R.id.SecondEmail);
         secondEmail.setText(savedEmail);
+
+
         mImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,7 +49,19 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
+        toolBarButton = findViewById(R.id.toolBarButton);
+
+        toolBarButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent tools = new Intent(ProfileActivity.this, TestToolbar.class);
+                startActivity(tools);
+            }
+        });
+
         Log.e(ACTIVITY_NAME, "onCreate called");
+
 
     }
 

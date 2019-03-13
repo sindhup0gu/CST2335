@@ -54,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void loadData() {
-        String savedString = sp.getString(TEXT, "");
-        email.setText(savedString);
+        String savedString = sp.getString(TEXT, ""); //fetching the data
+        email.setText(savedString); //setting the data
     }
 
     @Override
