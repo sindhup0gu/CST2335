@@ -19,6 +19,7 @@ public class ProfileActivity extends AppCompatActivity {
     public static final String ACTIVITY_NAME = "ProfileActivity";
     private Button chatButton;
     private Button toolBarButton;
+    private Button weatherForecastButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,14 @@ public class ProfileActivity extends AppCompatActivity {
 
                 Intent tools = new Intent(ProfileActivity.this, TestToolbar.class);
                 startActivity(tools);
+            }
+        });
+        weatherForecastButton = findViewById(R.id.currentWeather);
+        weatherForecastButton.setOnClickListener (new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent weatherForecast = new Intent(ProfileActivity.this, WeatherForecast.class);
+                startActivity(weatherForecast);
             }
         });
 

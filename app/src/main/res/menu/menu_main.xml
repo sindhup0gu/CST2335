@@ -29,6 +29,6 @@
         android:id="@+id/menu4"
         android:orderInCategory="400"
         android:title="Choice4"
-        app:showAsAction="always"
+        app:showAsAction="never"
         android:icon="@drawable/overflow"/>
 </menu>
